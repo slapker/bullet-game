@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane fx:controller="fr.slapker.bullet.views.MenuView" id="menuPane" maxHeight="768" maxWidth="1024"
+          prefHeight="768" prefWidth="1024" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" fillWidth="true"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <Button fx:id="startButton" id="buttonMenu" alignment="CENTER" mnemonicParsing="false" onAction="#startGame"
+                text="RESCUE" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Button fx:id="startGravityButton" id="buttonMenu" alignment="CENTER" mnemonicParsing="false"
+                onAction="#startGravityGame"
+                text="GRAVITY" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Button fx:id="startSurvivalButton" id="buttonMenu" alignment="CENTER" mnemonicParsing="false"
+                onAction="#startSurvival" text="SURVIVAL" textAlignment="CENTER" GridPane.columnIndex="1"
+                GridPane.rowIndex="3"/>
+        <Button fx:id="resumeButton" id="buttonMenu" alignment="CENTER" mnemonicParsing="false" onAction="#resumeGame"
+                text="RESUME" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+        <Button fx:id="levelMaker" id="buttonMenu" alignment="CENTER" mnemonicParsing="false" onAction="#levelMaker"
+                text="LEVEL DESIGN" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+        <Button fx:id="quitButton" id="buttonMenu" alignment="CENTER" mnemonicParsing="false" onAction="#quitGame"
+                text="QUIT" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+    </children>
+</GridPane>

@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Game';
+    src: url('GAME_glm.ttf');
+}
+
+@font-face {
+    font-family: 'Gameplay';
+    src: url('Gameplay.ttf');
+}
+
+#menuPane {
+    -fx-background-image: url("/images/menu_background.png");
+    -fx-background-size: 1024 768;
+    -fx-background-position: center center;
+    -fx-alignment: center;
+}
+
+#buttonMenu {
+    -fx-background-color: black;
+    -fx-pref-width: 700;
+    -fx-pref-height: 100;
+    -fx-font-size: 30px;
+    -fx-font-family: "Gameplay";
+    -fx-text-fill: white;
+    -fx-border-radius: 30px;
+}
+
+#buttonMenu:hover {
+    -fx-text-fill: lightyellow;
+}
+
+#buttonMenu:focused {
+    -fx-text-fill: yellow;
+}
+
+.menuTextField {
+    -fx-background-color: black;
+    -fx-color-label-visible: white;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+
+.labelTextField {
+    -fx-font-size: 17px;
+    -fx-text-fill: lightGrey;
+}
+
+.sliderInfo {
+    -fx-text-fill: yellow;
+}

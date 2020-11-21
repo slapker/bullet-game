@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:controller="fr.slapker.bullet.views.MenuSurvival" id="menuPane" maxHeight="768" maxWidth="1024"
+          prefHeight="768" prefWidth="1024" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+    <columnConstraints>
+        <ColumnConstraints fillWidth="true"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <Button fx:id="startButton" id="buttonMenu" alignment="CENTER" mnemonicParsing="false" onAction="#startEasy"
+                text="EASY - You can do it..." textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Button fx:id="startButton2" id="buttonMenu" alignment="CENTER" mnemonicParsing="false" onAction="#startMedium"
+                text="MEDIUM - Roll up your sleeves" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Button fx:id="startButton3" id="buttonMenu" alignment="CENTER" mnemonicParsing="false" onAction="#startHardcore"
+                text="HARDCORE - Pray the lord !" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <Button fx:id="quitButton" id="buttonMenu" alignment="CENTER" mnemonicParsing="false" onAction="#back"
+                text="BACK" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+    </children>
+</GridPane>
